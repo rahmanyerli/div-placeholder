@@ -11,13 +11,13 @@
 ```css
 div {
 	margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #000000;
-  font-family: sans-serif;
+  	padding: 1rem;
+  	border: 1px solid #000000;
+  	font-family: sans-serif;
 }
 
 div:empty:not(:focus):before {
 	content: attr(data-placeholder);
-  color: #999999;
+  	color: #999999;
 }
 ```
