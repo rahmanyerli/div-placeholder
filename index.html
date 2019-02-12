@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		div {
+			margin: 1rem;
+			padding: 1rem;
+			border: 1px solid #000000;
+			font-family: sans-serif;
+		}
+
+		div:empty:not(:focus):before {
+			content: attr(data-placeholder);
+			color: #999999;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div data-placeholder="placeholder text..."></div>
+	<div data-placeholder="placeholder text...">test</div>
+	<div data-placeholder="placeholder text..."></div>
+
+</body>
+
+</html>
